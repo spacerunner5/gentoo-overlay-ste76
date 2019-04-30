@@ -4,7 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python{3_4,3_5,3_6} )
-inherit python-single-r1
+inherit python-single-r1 git-r3
 
 GITHUB_USER="ste7677"
 GITHUB_REPO="bliss-initramfs"
@@ -38,7 +38,7 @@ src_install() {
 	cp -r "${S}/pkg" "${D}/opt/${PN}" || die
 
 	# Copy documentation files
-	dodoc README USAGE
+	dodoc README.md USAGE
 
 	# Make a symbolic link: /sbin/bliss-initramfs
 	dosym "${EPREFIX}/opt/${PN}/${executable}" "/sbin/${PN}"
