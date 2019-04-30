@@ -1,10 +1,10 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 PYTHON_COMPAT=( python{3_4,3_5,3_6} )
-inherit python-single-r1
+inherit python-single-r1 git-r3
 
 GITHUB_USER="ste7677"
 GITHUB_REPO="bliss-initramfs"
@@ -24,8 +24,6 @@ RDEPEND="
 	${PYTHON_DEPS}
 	app-arch/cpio
 	virtual/udev"
-
-S="${WORKDIR}/${GITHUB_REPO}-${GITHUB_TAG}"
 
 src_install() {
 	# Copy the main executable
