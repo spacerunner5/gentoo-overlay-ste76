@@ -15,7 +15,7 @@ HOMEPAGE="https://github.com/${GITHUB_USER}/${GITHUB_REPO}"
 SRC_URI="https://github.com/${GITHUB_USER}/${GITHUB_REPO}/archive/${GITHUB_TAG}.tar.gz -> ${P}.tar.gz"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-RESTRICT="strip"
+RESTRICT="mirror"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="-* amd64"
