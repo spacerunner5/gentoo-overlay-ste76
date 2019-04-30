@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -6,7 +6,7 @@ EAPI=6
 PYTHON_COMPAT=( python{3_4,3_5,3_6} )
 inherit python-single-r1
 
-GITHUB_USER="fearedbliss"
+GITHUB_USER="ste7677"
 GITHUB_REPO="bliss-initramfs"
 GITHUB_TAG="${PV}"
 
