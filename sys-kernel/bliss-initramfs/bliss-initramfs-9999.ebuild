@@ -25,7 +25,7 @@ RDEPEND="
 	app-arch/cpio
 	virtual/udev"
 
-S="${WORKDIR}/${GITHUB_REPO}-${GITHUB_TAG}"
+# S="${WORKDIR}/${GITHUB_REPO}-${GITHUB_TAG}"
 
 src_install() {
 	# Copy the main executable
